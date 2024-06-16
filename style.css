@@ -264,7 +264,8 @@ input::placeholder {
 
 @media only screen and (max-width: 500px) {
 	.child-cont {
-		padding: 20px 20px;
+		/* padding: 20px 20px; */
+		padding: 20px 10px;
 	}
 	.child-cont .child .children {
 		background-color: #3d3d3d;
@@ -291,3 +292,49 @@ input::placeholder {
 		height: 24px;
 	}
 }
+
+/* Semantic changes */
+header.icons aside img {
+	display: block;
+}
+
+header.label aside {
+	display: flex;
+	align-items: center;
+	gap: 0.4rem;
+}
+
+.expand-cont .expand aside {
+	/* display: inline-block; */
+	width: 40px;
+	height: 40px;
+	background-color: #656565;
+	display: grid;
+	place-content: center;
+	border-radius: 100%;
+	cursor: pointer;
+}
+.expand-cont .expand aside:nth-child(2) {
+	width: fit-content;
+	border-radius: 20px;
+	width: 140px;
+	height: 40px;
+	/*  */
+	display: flex;
+	gap: 0.4rem;
+	align-items: center;
+}
+
+.child-cont .child .children aside {
+	padding: 10px 20px;
+	cursor: pointer;
+}
+.child-cont .child .children-1 aside:nth-of-type(1),
+.child-cont .child .children-2 aside:nth-of-type(1),
+.child-cont .child .children-3 aside:nth-of-type(1),
+.child-cont .child .children-4 aside:nth-of-type(1) {
+	background-color: #646464;
+	border-radius: 20px;
+	padding: 10px 20px;
+}
+/*  */
